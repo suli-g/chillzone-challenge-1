@@ -8,10 +8,13 @@ mod double_odd;
 fn main() {
     // Get the numbers as arguments passed to the 
     let values: Vec<String> =  env::args().skip(1).map(|x| x.parse().unwrap()).collect();
-    let numbers: Vec<i32> = str_vec_to_int(values);
-
-    println!("{:?}", numbers);
-    println!("{:?}", double_odd(numbers));
+    if values.len() < 2 {
+        println!("Please enter 2 or more integers.")
+    } else {
+        let numbers: Vec<i32> = str_vec_to_int(values);
+    
+        println!("{:?}", double_odd(numbers));
+    }
 }
 
 /// Converts the vector passed to a vector of integers.
