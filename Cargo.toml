@@ -1,6 +1,12 @@
 [package]
 name = "challenge"
 version = "0.1.0"
-edition = "2021"
+authors = ["Sulaiman Gafoor <suligzus@gmail.com>"]
+license = "MIT"
+description = "A simple application that doubles every second value in a list of numbers."
+readme = "README.md"
+repository = "https://github.com/suli-g/chillzone-challenge-1"
+categories = ["command-line-utilities"]
+keywords = ["cli", "array", "double", "demo"]
 
 [dependencies]
