@@ -1,4 +1,4 @@
-# cargo-template-cli
+# Chillzone Challenge #1
 
 This project generated a command-line tool that doubles each second value in an array of numbers.
 
